@@ -1,3 +1,3 @@
 # Simple Copa America Web App
 
-Simple CRUD web application using Nuxt.js as frontend framework and Typescript + Node.js + Express.js REST API as backend framework.
+Simple CRUD web application using Nuxt.js (Server Side Rendering) as frontend framework and Typescript + Node.js + Express.js REST API as backend framework.
