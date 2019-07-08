@@ -39,8 +39,6 @@
         >
           Eliminar
         </a>
-        
-
       </div>
   </div>
 </template>
