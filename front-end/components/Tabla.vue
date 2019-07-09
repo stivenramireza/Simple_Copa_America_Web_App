@@ -19,9 +19,9 @@
   </b-container>
   <div class="links">
         <a
-          href="/"
           target="_blank"
           class="button--green"
+          @click="getTeams"
         >
           Añadir
         </a>
@@ -39,12 +39,10 @@
         >
           Eliminar
         </a>
-        
-
       </div>
   </div>
 </template>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 export default {
   data() {
@@ -79,6 +77,17 @@ export default {
           { value: 'Bolivia', text: 'Bolivia', disabled: true }
         ]
       }
+  },
+  methods: {
+    getTeams(){
+      fetch('http://localhost:3001/team')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(myJson) {
+          console.log(myJson);
+        });
+    }
   }
 }
 </script>
